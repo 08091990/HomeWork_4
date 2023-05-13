@@ -8,6 +8,7 @@ int[] EvenNumber(int[] massive)
     int min = massive[0];
     int difference = 0;
     for (int i = 1; i < massive.Length; i++)
+    {
         if (massive[i] > max)
         {
             max = massive[i];
@@ -18,7 +19,8 @@ int[] EvenNumber(int[] massive)
             min = massive[i];
         }
         difference = max - min;
-        Console.WriteLine(" Сумма элементов на нечетных позициях: {0}", difference);
+        Console.WriteLine(" Разницу между максимальным и минимальным элементом массива: {0}", difference);
+    }
     return massive;
 }
 
